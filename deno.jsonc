@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net=0.0.0.0:8080 --allow-read --allow-env --allow-ffi --unstable --watch main.ts",
+    "compile:windows": "deno compile --allow-net=0.0.0.0:8080 --allow-read --allow-write --allow-env --allow-ffi --unstable --target x86_64-pc-windows-msvc --include worker.ts main.ts"
+  },
+  "lock": false,
+  "imports": {
+    "$std/": "https://deno.land/std@0.190.0/",
+    "webview": "https://deno.land/x/webview@0.7.5/mod.ts"
+  },
+  "fmt": {
+    "exclude": ["README.md"]
+  }
+}

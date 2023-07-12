@@ -1,10 +1,12 @@
-# Learn Repo Template
+# Learn Deno Webview
 
 ## 本リポジトリの目的
-練習用リポジトリを目的や達成目標を持って実施できるようにするため
+webview_denoのUIを手軽に書くための方法を模索する
 
 ## 本リポジトリの達成目標
-このテンプレートリポジトリを使って練習用リポジトリを作成されるようになる
+- [x] webview_denoでHello World!とコンパイル
+- [ ] UI描画にPreactを採用
+- [ ] スタイル記述をTailwind CSSを採用
 
 ## 参考資料
 - 特になし
