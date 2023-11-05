@@ -2,7 +2,7 @@ import { dirname, join } from "$std/path/mod.ts";
 import { Webview } from "webview";
 
 const worker = new Worker(
-  join(dirname(import.meta.url), "worker.ts"),
+  join(dirname(import.meta.url), "worker.tsx"),
   { type: "module" },
 );
 
