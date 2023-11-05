@@ -2,7 +2,7 @@
   "tasks": {
     "dev": "deno run --allow-net=0.0.0.0:8080 --watch worker.tsx",
     "preview": "deno run -A --unstable main.ts",
-    "compile:windows": "deno compile -A --unstable --output vdw-windows --target x86_64-pc-windows-msvc --include worker.tsx main.ts",
+    "compile:windows": "deno compile -A --unstable --no-terminal --output vdw-windows --target x86_64-pc-windows-msvc --include worker.tsx main.ts",
     "compile:darwin:x86": "deno compile -A --unstable --output vdw-darwin-x86 --target x86_64-apple-darwin --include worker.tsx main.ts",
     "compile:darwin:aarch64": "deno compile -A --unstable --output vdw-darwin-aarch64 --target aarch64-apple-darwin --include worker.tsx main.ts",
     "compile:linux": "deno compile -A --unstable --output vdw-linux --target x86_64-unknown-linux-gnu --include worker.tsx main.ts"
