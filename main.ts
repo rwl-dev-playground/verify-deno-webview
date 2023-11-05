@@ -8,6 +8,7 @@ const worker = new Worker(
 
 const webview = new Webview();
 webview.navigate("http://localhost:8080/");
+webview.title = "Verify Deno Webview"
 
 console.log("[runner] worker started");
 webview.run();
